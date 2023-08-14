@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+<body>
+    <nav>
+    <p>Payment page</p>
+ </nav>
+ 
+  <h1>Payment Details</h1>
+
+  <form id="paymentForm">
+    <div id="pay">
+      <!-- Cardnumber -->
+      <div>
+        <label for="card_number">Card Number:</label><br>
+        <input type="number" id="card_number" name="card_number" required>
+      </div>
+      <br>
+
+      <!-- Expiry Date -->
+      <div>
+        <label for="Expiry_date">Expiry Date:</label><br>
+        <input type="date" id="Expiry_date" name="Expiry_date" required>
+      </div>
+      <br>
+        
+      <!-- CVC / CVV -->
+      <div>
+        <label for="cvc_cvv">CVC/CVV:</label><br>
+        <input type="number" id="cvc_cvv" name="cvc_cvv" required>
+      </div>
+      <br>
+
+      <!-- Name on card -->
+      <div>
+        <label for="name_on_card">Name on card:</label><br>
+        <input type="text" id="name_on_card" name="name_on_card" required>
+      </div>
+      <br>
+
+      <button type="submit">Submit</button>
+    </div>
+    </form>
+    
+    <!--Summary table-->
+    <div class="summary">
+      <h2>Summary</h2>
+      <table id="summaryTable" border="1">
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+      </table>
+     </div>
+  <br>
+  <br>  
+      
+      <p id="btn">
+        <button type="submit" id="payButton" disabled>Pay</button>
+      </p>
+    
+
+    <script src="./payment.js"></script>
+</body>
+</html>

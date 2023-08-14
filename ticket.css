@@ -1,0 +1,239 @@
+nav{
+    background-color: rgb(49, 54, 56);
+    height: 100px;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    font-size: 45px;
+    font-family: cursive;
+    
+}
+
+body {
+  
+  font-family: Arial, sans-serif;
+  align-items: center;
+  background-image: url(./Images/beach3.jpeg);
+}
+
+
+/*-------------Calendar-------------*/
+
+#date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.calendar-container {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+#prevBtn,
+#nextBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#monthYear {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 0 15px;
+}
+
+.calendar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar div:hover {
+  background-color: #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+h2{
+  text-align: center;
+}
+label{
+  color: white
+}
+
+/*-------------Guest Ticket--------------*/
+.sec{
+  margin-top: 10px;
+  border: 1px solid black;
+  width:400px;
+  margin-left: 35%;
+  padding-left: 15px;
+  font-weight: bold;
+  padding-top: 15px;
+  background-color: rgb(0, 0, 0);
+  font: white;
+}
+.section {
+  margin-bottom: 20px;
+  border: 1px solid black;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 35%;
+  padding-left: 15px;
+  font-weight: bold;
+  padding-top: 15px;
+  background-color: rgb(0, 0, 0);
+  
+}
+.tab{
+  background-color: rgb(176, 235, 255);
+  width: 600px;
+  margin-left: 30%;
+
+}
+
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 150px;
+    
+}
+#selected-date{
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: 150px;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for date input */
+input[type="date"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+select option {
+  padding: 5px;
+}
+
+
+#summary-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+#summary-table th {
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+
+#summary-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for the "Continue with purchase" button */
+#continue-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40%;
+}
+
+/* Disable button initially */
+#continue-button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* Global styles */
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+
+  body {
+      font-size: 16px;
+  }
+
+  .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+
+  .tab {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 767px) {
+ 
+  body {
+      font-size: 14px;
+  }
+
+  .section {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .tab {
+      max-width: 100%;
+      padding: 10px;
+  }
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details page</title>
+    <link rel="stylesheet" href="./detail.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <p>Details page</p>
+     </nav>
+
+     <h1>Enter your Details</h1>
+     <div class="container">
+      <form id="myForm">
+        <!--Name-->
+        <label for="fullName"><strong>Full Name:</strong></label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+            
+        <!--Mobile Number-->
+        <label for="phone"><strong>Mobile Number:</strong></label><br>
+        <input name="phone" type="text" id="phone"><br><br>
+       
+        
+     <!--Email-->
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+     <!--confirm email-->
+        <label for="confirmEmail"><strong>Confirm Email:</strong></label>
+        <input type="email" id="confirmEmail" name="confirmEmail" required><br><br>
+    
+     <!--gender-->
+        <label for="gender"><strong>Gender:</strong></label><br>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br><br>
+        
+        <button type="submit">Submit</button>
+      </form>
+      
+      <!--Summary table-->
+     
+      <div class="summary">
+        <h2>Summary</h2>
+        <table id="detailsTable" border="1">
+          <tr>
+            <th>Field</th>
+            <th>Value</th>
+          </tr>
+        </table>
+       </div>
+    </div>
+    <table id="details"></table>
+    
+    <br>
+    <br>  
+    <button id="purchaseButton" style="display: none;"> Continue with purchase</button>
+    <script src="./detail.js"></script>
+</body>
+</html>
