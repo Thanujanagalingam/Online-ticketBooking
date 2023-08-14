@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket page</title>
+    <link rel="stylesheet" href="./ticket.css">
+</head>
+<body>
+    
+    
+    <nav>
+        <p>Buy Tickets</p>
+    </nav>
+
+      <!--Date Calendar-->
+
+      <h1>Date</h1>
+      
+    <div id="date">
+     <div class="calendar-container">
+        <div class="calendar-header">
+          <button id="prevBtn">&lt;</button>
+          <h2 id="monthYear"></h2>
+          <button id="nextBtn">&gt;</button>
+        </div>
+      <div class="calendar" id="calendar"></div>
+    </div>
+    <div class="selected-date-container">
+      <h3>Selected Date:</h3>
+      <p id="selectedDate"></p>
+    </div>
+   </div>
+
+      
+
+   
+<div class="sec">
+  <h1>Date</h1>
+  <input type="date" id="selected-date">
+</div>
+<br><br>
+
+    <!--Guest-->
+<div class="section">
+    <h1>Guests</h1>
+    
+    <!--Srilanka Adult-->
+    <label for="sl-adult">SriLanka Adult</label>
+    <input type="number" id="sl-adult" min="0"><br>
+
+    <!--Srilanka Child-->
+    <label for="sl-child">Srilanka Child</label>
+    <input type="number" id="sl-child" min="0"><br>
+
+    <!--Foreigner Adult-->
+    <label for="foreigner-adult">Foreigner Adult</label>
+    <input type="number" id="foreigner-adult" min="0"><br>
+    
+    <!--Foreiger Child-->
+    <label for="foreigner-child">Foreigner Child</label>
+    <input type="number" id="foreigner-child" min="0"><br>
+
+
+    <!--Infant-->
+    <label for="infant">Infant</label>
+    <input type="number" id="infant" min="0">
+ 
+  <!--duration and tickets section-->
+  <h1>Duration</h1>
+  <select id="duration" multiple>
+    <option value="1">07.00 am - 08.00 am</option>
+    <option value="2">08.00 am - 09.00 am</option>
+    <option value="3">09.00 am - 10.00 am</option>
+    <option value="4">10.00 am - 11.00 am(peak)</option>
+    <option value="5">11.00 am - 12.00 pm(peak)</option>
+    <option value="6">12.00 pm - 01.00 pm(peak)</option>
+    <option value="7">01.00 pm - 02.00 pm</option>
+    <option value="8">02.00 pm - 03.00 pm</option>
+    <option value="9">03.00 pm - 04.00 pm(peak)</option>
+    <option value="10">04.00 pm - 05.00 pm(peak)</option>
+    <option value="11">05.00 pm - 06.00 pm(peak)</option>
+
+  
+  </select>
+</div>
+
+<!--Summary Table-->
+<div class="tab">
+  <h2> Summary Table</h2>
+  <table id="summary-table" border="1">
+    <thead>
+      <tr>
+        <th>Guests</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Duration</th>
+        <th>Number of Tickets</th>
+        <th>Tickets Value</th>
+      </tr>
+    </thead>
+    <tbody id="tickets-table">
+      <!--dynamically updated-->
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">Total Payable:</td>
+        <td id="total-paypal">$0</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<br>
+<br>
+</div>
+<button id="continue-button" disabled>Continue with purchase</button>
+
+
+
+    <script src="./ticket.js"></script>
+</body>
+</html>
